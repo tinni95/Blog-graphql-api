@@ -1,0 +1,11 @@
+projects:
+  app:
+    schema: ./src/schema.graphql
+  database:
+    schema: ./prisma/prisma.yml
+    extensions:
+      codegen:
+        generates:
+          ./src/generated/schema.graphql:
+            plugins:
+              - schema-ast
