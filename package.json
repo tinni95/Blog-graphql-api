@@ -7,8 +7,8 @@
     "heroku-postbuild": "babel src --out-dir dist --copy-files",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js --ext js,graphql --exec babel-node",
     "get-schema": "graphql codegen --project database",
-    "deploy-development": "prisma deploy -e ./config/dev.env",
-    "deploy-production": "prisma deploy -e ./config/prod.env"
+    "deploy-dev": "prisma deploy -e ./config/dev.env",
+    "deploy-prod": "prisma deploy -e ./config/prod.env"
   },
   "license": "MIT",
   "dependencies": {
